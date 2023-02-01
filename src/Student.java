@@ -4,7 +4,7 @@ public class Student {
     public String nazwisko;
     public String nick;
     public String email;
-    public String numerIndeksu;
+    public int numerIndeksu;
 
     public void przedstawSie() {
         System.out.println("Nazywam się " + imie + " " + nazwisko);
