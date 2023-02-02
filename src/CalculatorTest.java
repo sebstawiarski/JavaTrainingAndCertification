@@ -9,11 +9,13 @@ public class CalculatorTest {
         System.out.println("Prosze podaj drugą liczbę");
         int secondNumber = scanner.nextInt();
 
-        int addition = firstNumber + secondNumber;
-        int substration = firstNumber - secondNumber;
-        int multiplication = firstNumber * secondNumber;
-        int division = firstNumber / secondNumber;
-        int mod = firstNumber % secondNumber;
+        Calculator calculator = new Calculator();
+
+        int addition = calculator.add(firstNumber,secondNumber);
+        int substration = calculator.sub(firstNumber,secondNumber);
+        int multiplication = calculator.mult(firstNumber,secondNumber);
+        int division = calculator.div(firstNumber,secondNumber);
+        int mod = calculator.mod(firstNumber,secondNumber);
 
         System.out.println("Wynik dodawania: " +addition);
         System.out.println("Wynik odejmowania: " +substration);
