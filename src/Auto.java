@@ -5,6 +5,16 @@ public class Auto {
     public Integer rok;
     public Integer przebieg;
 
+    public Auto() {
+
+    }
+    public Auto(String marka, String model, int rok, int przebieg) {
+        this.marka = marka;
+        this.model = model;
+        this.rok = rok;
+        this.przebieg = przebieg;
+
+    }
 
     public void jedz() {
         System.out.println("Jedź!");
